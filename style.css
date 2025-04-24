@@ -112,24 +112,28 @@ body {
   flex: 1;
 }
 
+/* ✅ UPDATED PRICE SECTION */
 .price {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
   flex: 1;
-  text-align: right;
 }
 
-.original-price {
+.price .current-price {
+  font-size: 14px;
+  font-weight: bold;
+  color: #000;
+}
+
+.price .original-price {
   text-decoration: line-through;
   color: #999;
   font-size: 12px;
-  margin-left: 5px;
+  margin-top: 2px;
 }
 
-.desc {
-  font-size: 12px;
-  color: #555;
-  margin-top: 5px;
-}
-
+/* ✅ Removed avatars related CSS */
 .select-group {
   margin-top: 10px;
   display: none;
@@ -145,23 +149,6 @@ body {
   display: flex;
   align-items: center;
   gap: 10px;
-}
-
-.avatars {
-  margin-top: 10px;
-  display: none;
-}
-
-.box.selected .avatars {
-  display: flex;
-}
-
-.avatars img {
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  margin-right: -10px;
-  border: 2px solid #fff;
 }
 
 .footer {
